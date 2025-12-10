@@ -15,9 +15,9 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
+      <AIDifferentiator />
       <WhyLoam />
       <HomerunMethod />
-      <AIDifferentiator />
       <Portfolio />
       <TargetAudience />
       <Philosophy />
