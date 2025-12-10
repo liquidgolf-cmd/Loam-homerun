@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-loam-text mb-6 leading-tight">
           From<br />
-          <span className="text-loam-sage text-6xl md:text-7xl lg:text-8xl">stuck and scattered</span><br />
+          <span className="text-loam-sage text-6xl md:text-7xl lg:text-8xl">Stuck and scattered</span><br />
           to clear and focused
         </h1>
         <p className="text-xl md:text-2xl text-loam-text/80 mb-4 text-balance">
