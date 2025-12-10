@@ -93,19 +93,13 @@ export default function Header() {
                 <span>{item.label}</span>
               </a>
             ))}
-            {/* CTAs */}
-            <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-loam-tan/30">
+            {/* CTA */}
+            <div className="ml-6 pl-6 border-l border-loam-tan/30">
               <a
                 href="#contact"
-                className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors whitespace-nowrap"
+                className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors whitespace-nowrap inline-block"
               >
-                Book
-              </a>
-              <a
-                href="#homerun-method"
-                className="px-4 py-2 bg-loam-white text-loam-teal border-2 border-loam-teal rounded-lg font-semibold text-sm hover:bg-loam-cream transition-colors whitespace-nowrap"
-              >
-                Learn More
+                Book Consultation
               </a>
             </div>
           </div>
@@ -149,21 +143,14 @@ export default function Header() {
                   <span>{item.label}</span>
                 </a>
               ))}
-              {/* Mobile CTAs */}
-              <div className="flex flex-col space-y-2 pt-2 border-t border-loam-tan/30 mt-2">
+              {/* Mobile CTA */}
+              <div className="pt-2 border-t border-loam-tan/30 mt-2">
                 <a
                   href="#contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors text-center"
+                  className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors text-center inline-block w-full"
                 >
                   Book Consultation
-                </a>
-                <a
-                  href="#homerun-method"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="px-4 py-2 bg-loam-white text-loam-teal border-2 border-loam-teal rounded-lg font-semibold text-sm hover:bg-loam-cream transition-colors text-center"
-                >
-                  Learn More
                 </a>
               </div>
             </div>
