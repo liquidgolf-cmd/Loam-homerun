@@ -28,18 +28,22 @@ export default function Services() {
     {
       title: 'Personal Brand Audit',
       description: 'AI-powered analysis of your personal brand presence and opportunities for authentic growth.',
+      href: '#', // TODO: Add actual URL
     },
     {
       title: 'Strategic Blind Spot Audit',
       description: 'Leverage AI to identify hidden gaps in your strategy that you might not see on your own.',
+      href: '#', // TODO: Add actual URL
     },
     {
       title: 'Visual Identity Audit',
       description: 'Comprehensive AI assessment of your visual brand elements and how they align with your goals.',
+      href: '#', // TODO: Add actual URL
     },
     {
       title: 'Business App Development Audit',
       description: 'AI-enhanced evaluation of your app strategy and development needs to serve your customers better.',
+      href: '#', // TODO: Add actual URL
     },
   ]
 
@@ -118,9 +122,10 @@ export default function Services() {
           >
             <div className="grid md:grid-cols-2 gap-8">
               {aiAuditServices.map((service) => (
-                <div
+                <a
                   key={service.title}
-                  className="bg-loam-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all border-t-4 border-loam-teal transform hover:-translate-y-1"
+                  href={service.href}
+                  className="bg-loam-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all border-t-4 border-loam-teal transform hover:-translate-y-1 block cursor-pointer"
                 >
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-semibold text-loam-teal bg-loam-sage/20 px-3 py-1 rounded-full">
@@ -133,7 +138,7 @@ export default function Services() {
                   <p className="text-loam-text/80 text-lg">
                     {service.description}
                   </p>
-                </div>
+                </a>
               ))}
             </div>
           </div>
