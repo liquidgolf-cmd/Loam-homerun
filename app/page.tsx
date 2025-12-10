@@ -14,9 +14,9 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <Services />
       <WhyLoam />
       <HomerunMethod />
-      <Services />
       <AIDifferentiator />
       <Portfolio />
       <TargetAudience />
