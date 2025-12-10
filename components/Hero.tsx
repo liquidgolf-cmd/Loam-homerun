@@ -3,10 +3,10 @@ export default function Hero() {
     <section id="hero" className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-loam-cream via-loam-white to-loam-cream px-4 py-20">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-loam-text mb-6 text-balance leading-tight">
-          You started this business. You have the answers. I just ask the right questions.
+          From stuck and scattered to clear and focused
         </h1>
-        <p className="text-xl md:text-2xl text-loam-text/80 text-balance">
-          Transform from <span className="font-semibold text-loam-text">"stuck and scattered"</span> to <span className="font-semibold text-loam-teal">"clear and focused"</span>
+        <p className="text-xl md:text-2xl text-loam-text/80 mb-8 text-balance">
+          You started this business. You have the answers. We combine human strategy and AI tools to help you see what you've been missing, faster and with less guess work
         </p>
       </div>
     </section>
