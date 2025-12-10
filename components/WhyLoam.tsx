@@ -55,8 +55,8 @@ export default function WhyLoam() {
               }`}
             >
               {/* Left Block with Keyword */}
-              <div className={`${component.bgColor} rounded-lg w-full md:w-20 h-20 flex items-center justify-center flex-shrink-0`}>
-                <span className={`${component.textColor} text-xl font-bold text-center`}>
+              <div className={`${component.bgColor} rounded-lg w-full md:w-32 h-20 flex items-center justify-center flex-shrink-0`}>
+                <span className={`${component.textColor} text-xl font-bold text-center px-2`}>
                   {component.keyword}
                 </span>
               </div>
