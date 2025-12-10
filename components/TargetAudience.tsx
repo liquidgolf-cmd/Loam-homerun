@@ -15,7 +15,7 @@ export default function TargetAudience() {
                 Small Business Owners
               </h3>
               <p className="text-lg text-loam-text/80">
-                You're growing, but you can't break through to the next level. You're spending too much time and resources on the wrong customers. You feel stuck and scattered, despite some success.
+                You've poured everything into your business. You're getting some traction, but the next level still feels out of reach. You're growing, but something's not working.
               </p>
             </div>
 
@@ -25,20 +25,20 @@ export default function TargetAudience() {
               </h4>
               <ul className="space-y-2 text-loam-text/80">
                 <li className="flex items-start">
-                  <span className="text-loam-green-600 mr-2">•</span>
-                  <span>Trying to be "something for everyone" instead of focusing</span>
+                  <span className="text-loam-teal mr-2">•</span>
+                  <span>You're not sure how to get beyond your current plateau.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-loam-green-600 mr-2">•</span>
-                  <span>Blind spots in your thinking and execution</span>
+                  <span className="text-loam-teal mr-2">•</span>
+                  <span>You're spending time and money on people who aren't the right fit.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-loam-green-600 mr-2">•</span>
-                  <span>Feeling desperate but reluctant to ask for help</span>
+                  <span className="text-loam-teal mr-2">•</span>
+                  <span>Your message feels fuzzy—you're trying to be "for everyone."</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-loam-green-600 mr-2">•</span>
-                  <span>Knowing you need clarity but fearing losing control</span>
+                  <span className="text-loam-teal mr-2">•</span>
+                  <span>You feel scattered, tired, and worried you might lose what you've built.</span>
                 </li>
               </ul>
             </div>

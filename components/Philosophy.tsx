@@ -23,7 +23,7 @@ export default function Philosophy() {
               Question-Based Discovery
             </h3>
             <p className="text-lg text-loam-text/80 leading-relaxed">
-              Unlike traditional consultants who provide solutions, I guide you through a process of self-discovery. The Homerun Method gives you a framework to continue using long after our engagement ends, building capability rather than dependency.
+              loam strategy helps small business owners move from confusion to clarity through guided conversations, AI-powered audits, and a simple framework you'll keep using long after we're done. Unlike traditional consultants who provide solutions, I guide you through a process of self-discovery. The Homerun Method gives you a framework to continue using long after our engagement ends, building capability rather than dependency.
             </p>
           </div>
 

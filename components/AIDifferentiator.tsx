@@ -12,7 +12,7 @@ export default function AIDifferentiator() {
             AI-Enhanced Strategy
           </h2>
           <p className="text-xl text-loam-text/80 max-w-3xl mx-auto">
-            We leverage AI to accelerate your discovery process—without replacing the human insight that makes strategy meaningful.
+            Human insight + AI-powered audits for owners who are growing but can't quite break through to the next level. We leverage AI to accelerate your discovery process—without replacing the human insight that makes strategy meaningful.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function AIDifferentiator() {
               </h3>
             </div>
             <p className="text-loam-text/80 text-lg">
-              AI accelerates the discovery process, helping you uncover blind spots and opportunities in days, not weeks. You still have the answers—we just help you find them faster.
+              We use AI as a co-strategist to surface patterns in minutes that might take hours manually. You still have the answers—we just help you find them faster.
             </p>
           </div>
 
