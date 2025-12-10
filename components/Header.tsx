@@ -7,12 +7,60 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { label: 'Why Loam', href: '#why-loam' },
-    { label: 'The Method', href: '#homerun-method' },
-    { label: 'Services', href: '#services' },
-    { label: 'AI Advantage', href: '#ai-differentiator' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Contact', href: '#contact' },
+    { 
+      label: 'Why Loam', 
+      href: '#why-loam',
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      )
+    },
+    { 
+      label: 'Method', 
+      href: '#homerun-method',
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+        </svg>
+      )
+    },
+    { 
+      label: 'Services', 
+      href: '#services',
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      )
+    },
+    { 
+      label: 'AI', 
+      href: '#ai-differentiator',
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      )
+    },
+    { 
+      label: 'Portfolio', 
+      href: '#portfolio',
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        </svg>
+      )
+    },
+    { 
+      label: 'Contact', 
+      href: '#contact',
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      )
+    },
   ]
 
   return (
@@ -34,27 +82,28 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-loam-text hover:text-loam-teal font-medium text-sm transition-colors"
+                className="flex items-center gap-2 text-loam-text hover:text-loam-teal font-medium text-sm transition-colors"
               >
-                {item.label}
+                <span className="flex-shrink-0">{item.icon}</span>
+                <span>{item.label}</span>
               </a>
             ))}
             {/* CTAs */}
-            <div className="flex items-center space-x-3 ml-4 pl-4 border-l border-loam-tan/30">
+            <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-loam-tan/30">
               <a
                 href="#contact"
-                className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors"
+                className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors whitespace-nowrap"
               >
-                Book Consultation
+                Book
               </a>
               <a
                 href="#homerun-method"
-                className="px-4 py-2 bg-loam-white text-loam-teal border-2 border-loam-teal rounded-lg font-semibold text-sm hover:bg-loam-cream transition-colors"
+                className="px-4 py-2 bg-loam-white text-loam-teal border-2 border-loam-teal rounded-lg font-semibold text-sm hover:bg-loam-cream transition-colors whitespace-nowrap"
               >
                 Learn More
               </a>
@@ -94,9 +143,10 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-loam-text hover:text-loam-teal font-medium text-base py-2 transition-colors"
+                  className="flex items-center gap-3 text-loam-text hover:text-loam-teal font-medium text-base py-2 transition-colors"
                 >
-                  {item.label}
+                  <span className="flex-shrink-0">{item.icon}</span>
+                  <span>{item.label}</span>
                 </a>
               ))}
               {/* Mobile CTAs */}
