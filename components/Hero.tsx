@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-loam-cream via-loam-white to-loam-cream px-4 py-20">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-loam-cream via-loam-white to-loam-cream px-4 pt-20 pb-8">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-loam-text mb-6 text-balance leading-tight">
           From <span className="text-loam-sage">stuck and scattered</span> to clear and focused

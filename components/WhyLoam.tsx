@@ -35,7 +35,7 @@ export default function WhyLoam() {
   ]
 
   return (
-    <section id="why-loam" className="py-20 px-4 bg-loam-cream">
+    <section id="why-loam" className="pt-8 pb-20 px-4 bg-loam-cream">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-loam-text mb-4">
