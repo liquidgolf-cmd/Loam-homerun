@@ -12,7 +12,7 @@ export default function TargetAudience() {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-loam-text mb-3">
-                Small Business Owners (0-5 years)
+                Small Business Owners
               </h3>
               <p className="text-lg text-loam-text/80">
                 You're growing, but you can't break through to the next level. You're spending too much time and resources on the wrong customers. You feel stuck and scattered, despite some success.
