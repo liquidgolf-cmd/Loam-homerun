@@ -59,14 +59,16 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-lg text-loam-text/80 mb-6">
-            These apps demonstrate our ability to understand customer needs, design effective solutions, and build apps that truly serve businesses.
+          <p className="text-lg text-loam-text/80 mb-6 max-w-3xl mx-auto">
+            If you have an idea for an app that you'd like help with, go through our app intake portal to define and submit your idea. We will then reach out to you with pricing and next steps. Your ideas will be kept completely confidential.
           </p>
           <a
-            href="#contact"
+            href="https://business-app-intake.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-loam-teal text-white rounded-lg font-semibold hover:bg-loam-teal/90 transition-colors"
           >
-            Discuss Your App Idea
+            Submit Your App Idea
           </a>
         </div>
       </div>
