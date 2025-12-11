@@ -125,14 +125,20 @@ export default function Services() {
                 <a
                   key={service.title}
                   href={service.href}
-                  className="bg-loam-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all border-t-4 border-loam-teal transform hover:-translate-y-1 block cursor-pointer"
+                  className="bg-loam-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all border-t-4 border-loam-teal transform hover:-translate-y-1 block cursor-pointer relative"
                 >
+                  {/* FREE Badge */}
+                  <div className="absolute top-4 right-4">
+                    <span className="text-3xl md:text-4xl font-bold text-loam-teal">
+                      FREE
+                    </span>
+                  </div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-semibold text-loam-teal bg-loam-sage/20 px-3 py-1 rounded-full">
                       AI-POWERED
                     </span>
                   </div>
-                  <h4 className="text-2xl font-bold text-loam-text mb-4">
+                  <h4 className="text-2xl font-bold text-loam-text mb-4 pr-16">
                     {service.title}
                   </h4>
                   <p className="text-loam-text/80 text-lg">
