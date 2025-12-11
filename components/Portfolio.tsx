@@ -3,22 +3,27 @@ export default function Portfolio() {
     {
       name: 'Finish Line Coach',
       description: 'A coaching app designed to help users achieve their goals and cross their personal finish lines.',
+      href: 'https://finishline-2og1.vercel.app/',
     },
     {
       name: 'Car Mileage Tracker',
       description: 'Track and manage your vehicle mileage for business or personal use with ease.',
+      href: 'https://car-mileage-tracker.vercel.app/',
     },
     {
       name: 'Business Development',
       description: 'Strategic tools and frameworks to accelerate business growth and development.',
+      href: 'https://homeruncoach.vercel.app/',
     },
     {
       name: 'Relationship Quiz',
       description: 'An interactive app that helps users understand and improve their relationships.',
+      href: 'https://relationship-flash-cards.vercel.app/',
     },
     {
       name: '3 Word Journal',
       description: 'A minimalist journaling app that encourages reflection through three-word entries.',
+      href: 'https://3-word-journal-v1.vercel.app/',
     },
   ]
 
@@ -36,9 +41,12 @@ export default function Portfolio() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {apps.map((app, index) => (
-            <div
+            <a
               key={app.name}
-              className="bg-gradient-to-br from-loam-cream to-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-loam-brown-200 hover:border-loam-green-400"
+              href={app.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-br from-loam-cream to-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-loam-brown-200 hover:border-loam-green-400 block cursor-pointer"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="w-10 h-10 rounded-lg bg-loam-teal flex items-center justify-center text-white font-bold">
@@ -54,7 +62,7 @@ export default function Portfolio() {
               <p className="text-loam-text/80">
                 {app.description}
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
