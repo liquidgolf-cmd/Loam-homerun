@@ -8,7 +8,7 @@ export default function Hero() {
           to clear and focused
         </h1>
         <p className="text-xl md:text-2xl text-loam-text/80 mb-4 text-balance">
-          You started this business. You have the answers. We combine human strategy and AI tools to help you see what you've been missing, faster and with less guess work
+          We combine human strategy and AI tools to help you see what you've been missing, faster and with less guess work
         </p>
         <p className="text-lg md:text-xl text-loam-teal font-semibold text-balance">
           Turn scattered ideas into a clear, AI-enhanced plan
