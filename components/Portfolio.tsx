@@ -11,8 +11,8 @@ export default function Portfolio() {
       href: 'https://car-mileage-tracker.vercel.app/',
     },
     {
-      name: 'Business Development',
-      description: 'Strategic tools and frameworks to accelerate business growth and development.',
+      name: 'Home Run Coach',
+      description: 'An AI coach that guides you through a 3-part path (Story, Solution, Success) to build a HomeRun business. Walk away with real reports and a concrete Business Action Plan—no more scattered notes and half-finished ideas.',
       href: 'https://homeruncoach.vercel.app/',
     },
     {
