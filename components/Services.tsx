@@ -110,6 +110,11 @@ export default function Services() {
                 </div>
               ))}
             </div>
+            <div className="mt-8 text-center">
+              <p className="text-lg text-loam-text/80 max-w-3xl mx-auto">
+                These services are delivered through advanced, personalized consultations tailored to your specific needs. Contact us for pricing and availability.
+              </p>
+            </div>
           </div>
 
           {/* AI Audit Services Tab */}
