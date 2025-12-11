@@ -4,7 +4,6 @@ import WhyLoam from '@/components/WhyLoam'
 import HomerunMethod from '@/components/HomerunMethod'
 import Services from '@/components/Services'
 import AIDifferentiator from '@/components/AIDifferentiator'
-import FreeTools from '@/components/FreeTools'
 import Portfolio from '@/components/Portfolio'
 import TargetAudience from '@/components/TargetAudience'
 import Philosophy from '@/components/Philosophy'
@@ -16,7 +15,6 @@ export default function Home() {
       <Header />
       <Hero />
       <AIDifferentiator />
-      <FreeTools />
       <Services />
       <WhyLoam />
       <HomerunMethod />

@@ -76,3 +76,4 @@ This Next.js app can be easily deployed to:
 - Integrate social media links
 - Add analytics tracking
 
+
