@@ -46,21 +46,14 @@ export default function HomerunMethod() {
 
         {/* Horizontal Timeline Flow */}
         <div className="relative">
-          {/* Connecting line - hidden on mobile, visible on desktop, positioned between cards and icons */}
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-loam-sage/30 transform -translate-y-1/2" style={{ marginLeft: '10%', marginRight: '10%' }}></div>
+          {/* Connecting line - hidden on mobile, visible on desktop, positioned at icon level */}
+          <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-loam-sage/30 transform -translate-y-1/2" style={{ marginLeft: '10%', marginRight: '10%' }}></div>
           
           <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-8 md:gap-4 mb-12">
             {steps.map((step, index) => (
               <div key={step.position} className="flex-1 flex flex-col items-center relative">
-                {/* Question Card - Aligned at top, fixed height */}
-                <div className="bg-loam-white border-2 border-loam-sage/30 rounded-lg p-4 shadow-md w-full max-w-[200px] text-center mb-4 min-h-[80px] md:min-h-[100px] flex items-center justify-center">
-                  <p className="font-semibold text-loam-text text-sm">
-                    {step.question}
-                  </p>
-                </div>
-
-                {/* Icon/Badge - All same size and aligned at bottom */}
-                <div className={`relative z-10 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center shadow-lg ${
+                {/* Icon/Badge - All same size and aligned at top */}
+                <div className={`relative z-10 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center shadow-lg mb-4 ${
                   step.icon === 'circle' 
                     ? 'bg-loam-brown rounded-full' 
                     : step.icon === 'diamond'
@@ -74,9 +67,16 @@ export default function HomerunMethod() {
                   </span>
                 </div>
 
-                {/* Arrow connector - hidden on mobile, positioned between cards and icons */}
+                {/* Question Card - Aligned below icon, fixed height */}
+                <div className="bg-loam-white border-2 border-loam-sage/30 rounded-lg p-4 shadow-md w-full max-w-[200px] text-center min-h-[80px] md:min-h-[100px] flex items-center justify-center">
+                  <p className="font-semibold text-loam-text text-sm">
+                    {step.question}
+                  </p>
+                </div>
+
+                {/* Arrow connector - hidden on mobile, positioned between icons */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                  <div className="hidden md:block absolute top-12 right-0 transform translate-x-1/2 -translate-y-1/2">
                     <svg className="w-8 h-8 text-loam-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
