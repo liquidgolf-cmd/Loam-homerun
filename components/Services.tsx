@@ -28,22 +28,22 @@ export default function Services() {
     {
       title: 'Personal Brand Audit',
       description: 'AI-powered analysis of your personal brand presence and opportunities for authentic growth.',
-      href: '#', // TODO: Add actual URL
+      href: 'https://personal-brand-hazel.vercel.app/',
     },
     {
       title: 'Strategic Blind Spot Audit',
       description: 'Leverage AI to identify hidden gaps in your strategy that you might not see on your own.',
-      href: '#', // TODO: Add actual URL
+      href: 'https://loamstrategy.com/blind-spot-audit.html',
     },
     {
       title: 'Visual Identity Audit',
       description: 'Comprehensive AI assessment of your visual brand elements and how they align with your goals.',
-      href: '#', // TODO: Add actual URL
+      href: 'https://loamstrategy.com/logo-audit-tool.html',
     },
     {
       title: 'Business App Development Audit',
       description: 'AI-enhanced evaluation of your app strategy and development needs to serve your customers better.',
-      href: '#', // TODO: Add actual URL
+      href: 'https://business-app-intake.vercel.app/',
     },
   ]
 
@@ -138,6 +138,8 @@ export default function Services() {
                 <a
                   key={service.title}
                   href={service.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-loam-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all border-t-4 border-loam-teal transform hover:-translate-y-1 block cursor-pointer relative"
                 >
                   {/* FREE Badge */}
