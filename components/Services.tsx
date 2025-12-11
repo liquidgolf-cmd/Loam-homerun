@@ -80,7 +80,7 @@ export default function Services() {
                   : 'text-loam-text/70 hover:text-loam-text'
               }`}
             >
-              AI Audit Services
+              Free AI Audit Services
             </button>
           </div>
         </div>
@@ -125,14 +125,6 @@ export default function Services() {
                 : 'opacity-0 hidden absolute inset-0'
             }`}
           >
-            <div className="text-center mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
-                Start with Free AI Audits
-              </h3>
-              <p className="text-lg text-loam-text/80 max-w-3xl mx-auto">
-                All our AI-powered audits are free to use. Get instant insights, then decide if you want deeper, personalized support.
-              </p>
-            </div>
             <div className="grid md:grid-cols-2 gap-8">
               {aiAuditServices.map((service) => (
                 <a
