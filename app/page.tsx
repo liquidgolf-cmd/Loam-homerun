@@ -10,10 +10,10 @@ export default function Home() {
       <Section bgColor="cream" padding="lg">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-loam-text mb-6 leading-tight">
-            From stuck & scattered to clear & focused.
+            Clarity begins with the right questions
           </h1>
           <p className="text-xl md:text-2xl text-loam-text/80 mb-8 text-balance">
-            The HomeRun Method helps you turn scattered ideas into a simple 90-day strategy—powered by human insight and AI.
+            A practical framework that turns honest reflection into a sharper message, stronger offers, and a focused roadmap
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button href="/course" variant="primary">
