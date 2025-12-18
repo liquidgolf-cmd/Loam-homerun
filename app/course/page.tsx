@@ -15,15 +15,15 @@ export default function CoursePage() {
       outcomes: [
         'Have a one-page snapshot of where you are now.',
         'Define what a "home run" looks like for the next 90 days.',
-        'Articulate why this work matters now and what\'s at stake if nothing changes.',
+        "Articulate why this work matters now and what's at stake if nothing changes.",
       ],
     },
     {
       number: 1,
-      title: '1st Base: Define Who You're Really For',
+      title: "1st Base: Define Who You're Really For",
       outcomes: [
         'Have 1–2 Ideal Customer Profiles that feel real, not made-up.',
-        'Know who you're not for—so you can stop chasing the wrong people.',
+        "Know who you're not for—so you can stop chasing the wrong people.",
         'Have language you can hand to a writer or designer without starting from scratch.',
       ],
     },
@@ -31,14 +31,14 @@ export default function CoursePage() {
       number: 2,
       title: '2nd Base: Design What They Actually Want',
       outcomes: [
-        'Map your customers' pains, desires, and ideal outcomes.',
+        "Map your customers' pains, desires, and ideal outcomes.",
         'Draft a clear core offer that states who you help, what you help them do, and why it matters.',
         'Have several tested variations of your offer statement you can use and refine.',
       ],
     },
     {
       number: 3,
-      title: '3rd Base: Map How You'll Deliver It',
+      title: "3rd Base: Map How You'll Deliver It",
       outcomes: [
         'Turn your process into a simple, visual path with 3–5 stages.',
         'Identify the essential assets you actually need (and what can wait).',
