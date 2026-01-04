@@ -3,6 +3,19 @@ import Button from '@/components/Button'
 import Card from '@/components/Card'
 
 export default function WorkWithMePage() {
+  // Mailto link for Review & Tune-Up request
+  const reviewRequestEmail = encodeURIComponent(`Please provide the following information:
+
+Name: [Required]
+Email: [Required]
+Company Name: [Required]
+
+Quick Overview of Problem:
+[Required - Please describe the main challenge or problem you're facing]
+
+---
+`)
+  const reviewRequestMailto = `mailto:loamstrategy@gmail.com?subject=${encodeURIComponent('HomeRun Review & Tune-Up Request')}&body=${reviewRequestEmail}`
   return (
     <main className="min-h-screen">
       {/* Section 1 – Hero */}
@@ -57,7 +70,7 @@ export default function WorkWithMePage() {
               </ul>
             </div>
           </div>
-          <Button variant="primary" href="mailto:hello@loamstrategy.com">
+          <Button variant="primary" href={reviewRequestMailto}>
             Request a review
           </Button>
         </div>
