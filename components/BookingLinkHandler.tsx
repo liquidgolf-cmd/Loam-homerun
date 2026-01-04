@@ -7,14 +7,29 @@ export default function BookingLinkHandler() {
   const pathname = usePathname()
 
   useEffect(() => {
+    // Temporarily disable smooth scroll, then jump
+    const jumpToBooking = () => {
+      const targetElement = document.getElementById('book-consultation')
+      if (targetElement) {
+        // Temporarily disable smooth scroll
+        const html = document.documentElement
+        const originalScrollBehavior = html.style.scrollBehavior
+        html.style.scrollBehavior = 'auto'
+        
+        // Jump directly
+        targetElement.scrollIntoView({ behavior: 'auto', block: 'start' })
+        
+        // Restore smooth scroll after a brief moment
+        setTimeout(() => {
+          html.style.scrollBehavior = originalScrollBehavior || ''
+        }, 100)
+      }
+    }
+
     // Handle hash in URL - jump to booking section (no smooth scroll)
     const handleHashScroll = () => {
       if (window.location.hash === '#book-consultation') {
-        const targetElement = document.getElementById('book-consultation')
-        if (targetElement) {
-          // Jump directly without smooth scroll
-          targetElement.scrollIntoView({ behavior: 'auto', block: 'start' })
-        }
+        jumpToBooking()
       }
     }
 
@@ -38,16 +53,18 @@ export default function BookingLinkHandler() {
       if (link) {
         const href = link.getAttribute('href')
         if (href && href.includes('#book-consultation')) {
-          // If already on homepage, prevent default and jump
-          if (pathname === '/' && (href === '#book-consultation' || href === '/#book-consultation')) {
-            e.preventDefault()
-            e.stopPropagation()
-            const targetElement = document.getElementById('book-consultation')
-            if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
+          // Always prevent default for booking links to control scroll behavior
+          e.preventDefault()
+          e.stopPropagation()
+          
+          // If navigating from another page, navigate first
+          if (pathname !== '/' && href.startsWith('/')) {
+            window.location.href = href
+            return
           }
-          // For navigation from other pages, Next.js handles it and hash will trigger scroll
+          
+          // Jump immediately
+          jumpToBooking()
         }
       }
     }
