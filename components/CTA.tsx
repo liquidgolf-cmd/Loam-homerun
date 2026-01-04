@@ -9,9 +9,7 @@ export default function CTA() {
           Let's work together to discover the answers you already have. Book a consultation to learn how The Homerun Method can help transform your business.
         </p>
         <a
-          href="https://calendly.com/liquidgolf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/#book-consultation"
           className="inline-block px-8 py-4 bg-loam-teal text-white rounded-lg font-semibold text-lg hover:bg-loam-teal/90 transition-colors shadow-lg hover:shadow-xl"
         >
           Book a Consultation

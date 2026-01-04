@@ -373,9 +373,31 @@ export default function Home() {
             <Button href="/course" variant="primary">
               Start with the course
             </Button>
-            <Button href="https://calendly.com/liquidgolf" variant="secondary" target="_blank" rel="noopener noreferrer">
+            <Button href="#book-consultation" variant="secondary">
               Book a consultation
             </Button>
+          </div>
+        </div>
+      </Section>
+
+      {/* Section 8 – Book a Consultation */}
+      <Section bgColor="white" id="book-consultation">
+        <div className="text-center max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-6">
+            Book a Consultation
+          </h2>
+          <p className="text-lg text-loam-text/80 mb-8">
+            Schedule a time to discuss how the HomeRun Method can help your business.
+          </p>
+          <div className="w-full rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3sa-LCDmgRG7i7A9PM8T9MHZVD1hLNSwpPQilB3_FVN9zmhQ85-phLbHMkew7__aeXNHZmQeZe?gv=true"
+              style={{ border: 0 }}
+              width="100%"
+              height="600"
+              className="w-full"
+              title="Book a consultation"
+            />
           </div>
         </div>
       </Section>

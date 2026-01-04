@@ -60,9 +60,7 @@ export default function Footer() {
                 hello@loamstrategy.com
               </a>
               <a
-                href="https://calendly.com/liquidgolf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/#book-consultation"
                 className="inline-block px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors"
               >
                 Book Consultation

@@ -66,9 +66,7 @@ export default function Header() {
             {/* CTA */}
             <div className="ml-6 pl-6 border-l border-loam-tan/30">
               <a
-                href="https://calendly.com/liquidgolf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/#book-consultation"
                 className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors whitespace-nowrap inline-block"
               >
                 Book Consultation
@@ -117,9 +115,7 @@ export default function Header() {
               {/* Mobile CTA */}
               <div className="pt-2 border-t border-loam-tan/30 mt-2">
                 <a
-                  href="https://calendly.com/liquidgolf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/#book-consultation"
                   onClick={() => setIsMenuOpen(false)}
                   className="px-4 py-2 bg-loam-teal text-white rounded-lg font-semibold text-sm hover:bg-loam-teal/90 transition-colors text-center inline-block w-full"
                 >

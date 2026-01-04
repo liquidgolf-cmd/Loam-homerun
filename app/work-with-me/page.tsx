@@ -100,7 +100,7 @@ export default function WorkWithMePage() {
               </ul>
             </div>
           </div>
-          <Button variant="primary" href="https://calendly.com/liquidgolf" target="_blank" rel="noopener noreferrer">
+          <Button variant="primary" href="/#book-consultation">
             Apply for a sprint
           </Button>
         </div>
@@ -154,7 +154,7 @@ export default function WorkWithMePage() {
               </ul>
             </div>
           </div>
-          <Button variant="primary" href="https://calendly.com/liquidgolf" target="_blank" rel="noopener noreferrer">
+          <Button variant="primary" href="/#book-consultation">
             Talk about your team
           </Button>
         </div>
@@ -203,4 +203,6 @@ export default function WorkWithMePage() {
     </main>
   )
 }
+
+
 

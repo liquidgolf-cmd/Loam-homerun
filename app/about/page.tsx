@@ -132,7 +132,7 @@ export default function AboutPage() {
       {/* CTA */}
       <Section bgColor="white">
         <div className="text-center">
-          <Button href="https://calendly.com/liquidgolf" variant="primary" target="_blank" rel="noopener noreferrer">
+          <Button href="/#book-consultation" variant="primary">
             Book a consultation
           </Button>
         </div>
@@ -140,4 +140,6 @@ export default function AboutPage() {
     </main>
   )
 }
+
+
 

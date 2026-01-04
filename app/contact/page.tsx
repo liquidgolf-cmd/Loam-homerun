@@ -36,7 +36,7 @@ export default function ContactPage() {
             <p className="text-lg text-loam-text/80 mb-6">
               Schedule a call to discuss how the HomeRun Method can help your business.
             </p>
-            <Button href="https://calendly.com/liquidgolf" variant="primary" target="_blank" rel="noopener noreferrer">
+            <Button href="/#book-consultation" variant="primary">
               Book a Consultation
             </Button>
           </div>
@@ -45,4 +45,6 @@ export default function ContactPage() {
     </main>
   )
 }
+
+
 
