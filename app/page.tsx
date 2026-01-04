@@ -382,7 +382,7 @@ export default function Home() {
 
       {/* Section 8 – Book a Consultation */}
       <Section bgColor="white" id="book-consultation">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-6">
             Book a Consultation
           </h2>
@@ -395,8 +395,9 @@ export default function Home() {
               style={{ border: 0 }}
               width="100%"
               height="600"
-              className="w-full"
+              className="w-full h-[500px] md:h-[600px]"
               title="Book a consultation"
+              allow="calendar"
             />
           </div>
         </div>
