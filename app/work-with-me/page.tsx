@@ -16,6 +16,19 @@ Quick Overview of Problem:
 ---
 `)
   const reviewRequestMailto = `mailto:loamstrategy@gmail.com?subject=${encodeURIComponent('HomeRun Review & Tune-Up Request')}&body=${reviewRequestEmail}`
+
+  // Mailto link for HomeRun Clarity Sprint application
+  const sprintApplicationEmail = encodeURIComponent(`Please provide the following information:
+
+Name: [Required]
+Email: [Required]
+
+Reason for Sprint Consideration:
+[Required - Please explain why you want to be considered for the HomeRun Clarity Sprint and what you hope to achieve]
+
+---
+`)
+  const sprintApplicationMailto = `mailto:loamstrategy@gmail.com?subject=${encodeURIComponent('HomeRun Clarity Sprint')}&body=${sprintApplicationEmail}`
   return (
     <main className="min-h-screen">
       {/* Section 1 – Hero */}
@@ -113,7 +126,7 @@ Quick Overview of Problem:
               </ul>
             </div>
           </div>
-          <Button variant="primary" href="/#book-consultation">
+          <Button variant="primary" href={sprintApplicationMailto}>
             Apply for a sprint
           </Button>
         </div>
