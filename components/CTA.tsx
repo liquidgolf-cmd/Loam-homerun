@@ -9,15 +9,15 @@ export default function CTA() {
           Let's work together to discover the answers you already have. Book a consultation to learn how The Homerun Method can help transform your business.
         </p>
         <a
-          href="/#book-consultation"
+          href="mailto:loamstrategy@gmail.com"
           className="inline-block px-8 py-4 bg-loam-teal text-white rounded-lg font-semibold text-lg hover:bg-loam-teal/90 transition-colors shadow-lg hover:shadow-xl"
         >
           Book a Consultation
         </a>
         <p className="mt-6 text-white/80">
           Or email us at{' '}
-          <a href="mailto:hello@loamstrategy.com" className="underline hover:text-white">
-            hello@loamstrategy.com
+          <a href="mailto:loamstrategy@gmail.com" className="underline hover:text-white">
+            loamstrategy@gmail.com
           </a>
         </p>
       </div>

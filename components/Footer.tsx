@@ -54,10 +54,10 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Get in Touch</h4>
             <div className="space-y-3">
               <a
-                href="mailto:hello@loamstrategy.com"
+                href="mailto:loamstrategy@gmail.com"
                 className="block text-loam-cream/80 hover:text-loam-cream text-sm transition-colors"
               >
-                hello@loamstrategy.com
+                loamstrategy@gmail.com
               </a>
               <a
                 href="/#book-consultation"

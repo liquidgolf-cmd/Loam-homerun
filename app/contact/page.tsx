@@ -22,10 +22,10 @@ export default function ContactPage() {
               Email
             </h2>
             <a
-              href="mailto:hello@loamstrategy.com"
+              href="mailto:loamstrategy@gmail.com"
               className="text-xl text-loam-teal hover:text-loam-teal/80 transition-colors"
             >
-              hello@loamstrategy.com
+              loamstrategy@gmail.com
             </a>
           </div>
 
