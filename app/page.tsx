@@ -8,24 +8,48 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Section 1 – Hero */}
       <Section bgColor="cream" padding="lg">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-loam-text mb-6 leading-tight">
-            Clarity begins with the right questions
-          </h1>
-          <p className="text-xl md:text-2xl text-loam-text/80 mb-8 text-balance">
-            A practical framework that turns honest reflection into a sharper message, stronger offers, and a focused roadmap
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <Button href="/course" variant="primary">
-              View the course
-            </Button>
-            <Button href="/work-with-me" variant="secondary">
-              Work with me 1:1
-            </Button>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Video Placeholder - Left Side */}
+            <div className="order-2 md:order-1">
+              <div className="relative w-full aspect-video bg-loam-brown/10 rounded-lg overflow-hidden shadow-lg">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <svg className="w-16 h-16 mx-auto mb-4 text-loam-teal" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <p className="text-loam-text/60 text-sm font-medium">
+                      Video placeholder
+                    </p>
+                    <p className="text-loam-text/40 text-xs mt-2">
+                      Course overview video will appear here
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Text Content - Right Side */}
+            <div className="order-1 md:order-2 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-loam-text mb-6 leading-tight">
+                Clarity begins with the right questions
+              </h1>
+              <p className="text-xl md:text-2xl text-loam-text/80 mb-8 text-balance">
+                A practical framework that turns honest reflection into a sharper message, stronger offers, and a focused roadmap
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
+                <Button href="/course" variant="primary">
+                  View the course
+                </Button>
+                <Button href="/work-with-me" variant="secondary">
+                  Work with me 1:1
+                </Button>
+              </div>
+              <p className="text-base md:text-lg text-loam-text/70">
+                For founders, leaders, and small teams who are growing, but can't quite break through to the next level.
+              </p>
+            </div>
           </div>
-          <p className="text-base md:text-lg text-loam-text/70">
-            For founders, leaders, and small teams who are growing, but can't quite break through to the next level.
-          </p>
         </div>
       </Section>
 
