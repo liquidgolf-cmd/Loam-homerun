@@ -68,51 +68,18 @@ export default function Home() {
             <Card
               title="5 Questions of a Stuck Brand"
               description="A fable for leaders and marketers"
-              className="h-full flex flex-col"
-            >
-              <div className="mt-auto pt-4">
-                <div className="h-48 bg-gradient-to-br from-loam-brown/20 to-loam-teal/20 rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center p-4">
-                    <svg className="w-12 h-12 mx-auto mb-2 text-loam-brown" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                    </svg>
-                    <p className="text-xs text-loam-text/60">Book Cover</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
+              image="/5 questions.png"
+            />
             <Card
               title="Bring it Home"
               description="The pitch that changed everything: a business fable about strategy, heart, and impact"
-              className="h-full flex flex-col"
-            >
-              <div className="mt-auto pt-4">
-                <div className="h-48 bg-gradient-to-br from-loam-teal/20 to-loam-sage/20 rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center p-4">
-                    <svg className="w-12 h-12 mx-auto mb-2 text-loam-teal" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                    </svg>
-                    <p className="text-xs text-loam-text/60">Book Cover</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
+              image="/Bring it home.png"
+            />
             <Card
               title="The Millon Dollar Lesson"
               description="Who Truly Matters - A transformative business fable"
-              className="h-full flex flex-col"
-            >
-              <div className="mt-auto pt-4">
-                <div className="h-48 bg-gradient-to-br from-loam-sage/20 to-loam-brown/20 rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center p-4">
-                    <svg className="w-12 h-12 mx-auto mb-2 text-loam-sage" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                    </svg>
-                    <p className="text-xs text-loam-text/60">Book Cover</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
+              image="/million dollar lesson.png"
+            />
           </div>
         </div>
       </Section>

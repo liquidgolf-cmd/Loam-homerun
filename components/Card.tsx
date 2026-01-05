@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface CardProps {
   title?: string
@@ -29,8 +30,14 @@ export default function Card({
         </div>
       )}
       {image && (
-        <div className="mb-4">
-          <img src={image} alt={title || ''} className="w-full h-48 object-cover rounded-lg" />
+        <div className="mb-4 relative w-full h-48 rounded-lg overflow-hidden">
+          <Image
+            src={image}
+            alt={title || 'Book cover'}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
       )}
       {title && (
