@@ -30,12 +30,12 @@ export default function Card({
         </div>
       )}
       {image && (
-        <div className="mb-4 relative w-full h-48 rounded-lg overflow-hidden">
+        <div className="mb-4 relative w-full h-64 rounded-lg overflow-hidden bg-loam-cream/30 flex items-center justify-center">
           <Image
             src={image}
             alt={title || 'Book cover'}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
