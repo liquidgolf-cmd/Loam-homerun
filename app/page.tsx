@@ -53,7 +53,71 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 2 – "Is this you?" */}
+      {/* Section 2 – Books */}
+      <Section bgColor="white" id="books">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
+              Books That Illustrate the HomeRun Method
+            </h2>
+            <p className="text-lg md:text-xl text-loam-text/80 max-w-3xl mx-auto">
+              Explore these business fables that bring the HomeRun Method to life through storytelling.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card
+              title="5 Questions of a Stuck Brand"
+              description="A fable for leaders and marketers"
+              className="h-full flex flex-col"
+            >
+              <div className="mt-auto pt-4">
+                <div className="h-48 bg-gradient-to-br from-loam-brown/20 to-loam-teal/20 rounded-lg flex items-center justify-center mb-4">
+                  <div className="text-center p-4">
+                    <svg className="w-12 h-12 mx-auto mb-2 text-loam-brown" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                    </svg>
+                    <p className="text-xs text-loam-text/60">Book Cover</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card
+              title="Bring it Home"
+              description="The pitch that changed everything: a business fable about strategy, heart, and impact"
+              className="h-full flex flex-col"
+            >
+              <div className="mt-auto pt-4">
+                <div className="h-48 bg-gradient-to-br from-loam-teal/20 to-loam-sage/20 rounded-lg flex items-center justify-center mb-4">
+                  <div className="text-center p-4">
+                    <svg className="w-12 h-12 mx-auto mb-2 text-loam-teal" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                    </svg>
+                    <p className="text-xs text-loam-text/60">Book Cover</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card
+              title="The Millon Dollar Lesson"
+              description="Who Truly Matters - A transformative business fable"
+              className="h-full flex flex-col"
+            >
+              <div className="mt-auto pt-4">
+                <div className="h-48 bg-gradient-to-br from-loam-sage/20 to-loam-brown/20 rounded-lg flex items-center justify-center mb-4">
+                  <div className="text-center p-4">
+                    <svg className="w-12 h-12 mx-auto mb-2 text-loam-sage" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                    </svg>
+                    <p className="text-xs text-loam-text/60">Book Cover</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      {/* Section 3 – "Is this you?" */}
       <Section bgColor="white" id="is-this-you">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
@@ -115,7 +179,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 3 – The Homerun Method */}
+      {/* Section 4 – The Homerun Method */}
       <Section bgColor="cream" id="homerun-method">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
@@ -215,7 +279,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 4 – "Choose your path" */}
+      {/* Section 5 – "Choose your path" */}
       <Section bgColor="white" id="choose-your-path">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
@@ -262,7 +326,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 5 – Why Loam Strategy? */}
+      {/* Section 6 – Why Loam Strategy? */}
       <Section bgColor="sage" id="why-loam">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
@@ -340,7 +404,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 6 – Apps We've Built */}
+      {/* Section 7 – Apps We've Built */}
       <Section bgColor="white" id="apps">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-4">
@@ -384,7 +448,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 7 – Final CTA */}
+      {/* Section 8 – Final CTA */}
       <Section bgColor="cream" padding="lg">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-6">
@@ -404,7 +468,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 8 – Book a Consultation */}
+      {/* Section 9 – Book a Consultation */}
       <Section bgColor="white" id="book-consultation">
         <div className="text-center max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-loam-text mb-6">
