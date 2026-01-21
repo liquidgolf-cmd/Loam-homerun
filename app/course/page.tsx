@@ -67,14 +67,22 @@ export default function CoursePage() {
           <p className="text-xl md:text-2xl text-loam-text/80 mb-6 text-balance">
             A 4-week, AI-assisted strategy lab to clarify your message, focus your offer, and build a 90-day plan you'll actually follow.
           </p>
-          <p className="text-lg text-loam-text/70 mb-8">
+          <p className="text-lg text-loam-text/70 mb-6">
             For founders, leaders, and small teams who are tired of guessing and want a simple, grounded plan.
           </p>
+          
+          {/* Development Notice */}
+          <div className="bg-loam-sage/20 border border-loam-sage/30 rounded-lg px-6 py-4 mb-8 max-w-2xl mx-auto">
+            <p className="text-loam-text font-semibold mb-1">
+              Currently in Development
+            </p>
+            <p className="text-loam-text/80 text-sm">
+              The HomeRun Strategy Lab is being built and will be available in <strong>Spring 2026</strong>. Join the waitlist below to be notified when enrollment opens.
+            </p>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="primary">
-              Enroll
-            </Button>
-            <Button variant="secondary">
               Join the waitlist
             </Button>
           </div>
