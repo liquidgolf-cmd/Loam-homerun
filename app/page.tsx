@@ -39,10 +39,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
                 <Button href="/course" variant="primary">
-                  View the course
+                  Learn more
                 </Button>
                 <Button href="/work-with-me" variant="secondary">
-                  Work with me 1:1
+                  Let's chat
                 </Button>
               </div>
               <p className="text-base md:text-lg text-loam-text/70">
