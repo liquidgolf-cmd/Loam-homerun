@@ -196,7 +196,7 @@ Reason for Sprint Consideration:
             <div>
               <h3 className="text-xl font-semibold text-loam-text mb-2">What it is:</h3>
               <p className="text-loam-text/80">
-                For coaches, consultants, and organizations who want to turn their IP into a simple, focused app—like Finish Line Coach or Home Run Coach.
+                For coaches, consultants, and organizations who want to turn their IP into a simple, focused app—like Finish Line Coach or Homerun to Happiness.
               </p>
             </div>
             <div>

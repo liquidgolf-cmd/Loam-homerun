@@ -6,14 +6,9 @@ export default function Portfolio() {
       href: 'https://finishline-2og1.vercel.app/',
     },
     {
-      name: 'Car Mileage Tracker',
-      description: 'Track and manage your vehicle mileage for business or personal use with ease.',
-      href: 'https://car-mileage-tracker.vercel.app/',
-    },
-    {
-      name: 'Home Run Coach',
-      description: 'An AI coach that guides you through a 3-part path (Story, Solution, Success) to build a HomeRun business. Walk away with real reports and a concrete Business Action Plan—no more scattered notes and half-finished ideas.',
-      href: 'https://homeruncoach.vercel.app/',
+      name: 'Homerun to Happiness',
+      description: "AI-powered life coaching that uses the HomeRun Method to help you discover your deepest WHY and build a clear path to the life you want.",
+      href: 'https://homerun-happiness.vercel.app/',
     },
     {
       name: 'Relationship Quiz',

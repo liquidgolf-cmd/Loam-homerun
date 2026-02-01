@@ -388,14 +388,9 @@ export default function Home() {
             href="https://finishline-2og1.vercel.app/"
           />
           <Card
-            title="Car Mileage Tracker"
-            description="A simple way to track and manage vehicle mileage for business or personal use."
-            href="https://car-mileage-tracker.vercel.app/"
-          />
-          <Card
-            title="Home Run Coach"
-            description="An AI coach that walks you through a 3-part path to build a HomeRun business, with real reports and a concrete action plan."
-            href="https://homeruncoach.vercel.app/"
+            title="Homerun to Happiness"
+            description="AI-powered life coaching that uses the HomeRun Method to help you discover your deepest WHY and build a clear path to the life you want."
+            href="https://homerun-happiness.vercel.app/"
           />
           <Card
             title="Relationship Quiz"
