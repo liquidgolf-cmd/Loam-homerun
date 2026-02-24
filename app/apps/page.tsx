@@ -15,6 +15,11 @@ export default function AppsPage() {
       href: 'https://homerun-happiness.vercel.app/',
     },
     {
+      name: 'For the Record',
+      description: 'A simple reflection app to capture what really happened—in your own words—so you can notice patterns, process your experiences, and move forward with more clarity.',
+      href: 'https://fortherecord.loamstrategy.com/',
+    },
+    {
       name: 'Relationship Quiz',
       description: 'An interactive app to help users understand and improve their relationships.',
       href: 'https://relationship-flash-cards.vercel.app/',
@@ -49,6 +54,19 @@ export default function AppsPage() {
               title={app.name}
               description={app.description}
               href={app.href}
+              icon={
+                app.name === 'Finish Line Coach'
+                  ? '🏁'
+                  : app.name === 'Homerun to Happiness'
+                  ? '🏠'
+                  : app.name === 'For the Record'
+                  ? '📝'
+                  : app.name === 'Relationship Quiz'
+                  ? '💬'
+                  : app.name === '3 Word Journal'
+                  ? '⋯'
+                  : undefined
+              }
             />
           ))}
         </div>

@@ -11,6 +11,11 @@ export default function Portfolio() {
       href: 'https://homerun-happiness.vercel.app/',
     },
     {
+      name: 'For the Record',
+      description: 'A simple reflection app to capture what really happened—in your own words—so you can notice patterns, process your experiences, and move forward with more clarity.',
+      href: 'https://fortherecord.loamstrategy.com/',
+    },
+    {
       name: 'Relationship Quiz',
       description: 'An interactive app that helps users understand and improve their relationships.',
       href: 'https://relationship-flash-cards.vercel.app/',

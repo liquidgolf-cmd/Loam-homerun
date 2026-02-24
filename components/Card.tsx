@@ -9,6 +9,7 @@ interface CardProps {
   image?: string
   children?: React.ReactNode
   className?: string
+  icon?: React.ReactNode
 }
 
 export default function Card({
@@ -19,6 +20,7 @@ export default function Card({
   image,
   children,
   className = '',
+  icon,
 }: CardProps) {
   const cardContent = (
     <div className={`bg-loam-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-loam-tan/30 ${href ? 'cursor-pointer' : ''} ${className}`}>
@@ -38,6 +40,13 @@ export default function Card({
             className="object-contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
+        </div>
+      )}
+      {icon && !image && (
+        <div className="mb-4">
+          <div className="w-10 h-10 rounded-lg bg-loam-teal flex items-center justify-center text-white text-lg">
+            {icon}
+          </div>
         </div>
       )}
       {title && (
