@@ -10,6 +10,7 @@ interface CardProps {
   children?: React.ReactNode
   className?: string
   icon?: React.ReactNode
+  heroVariant?: 'finishLine' | 'homerunHappiness' | 'forTheRecord' | 'relationshipQuiz' | 'threeWordJournal' | 'default'
 }
 
 export default function Card({
@@ -21,7 +22,80 @@ export default function Card({
   children,
   className = '',
   icon,
+  heroVariant,
 }: CardProps) {
+  const renderHeroStrip = () => {
+    if (!heroVariant || image) return null
+
+    if (heroVariant === 'finishLine') {
+      return (
+        <div className="mb-4">
+          <div className="h-10 w-full rounded-lg bg-gradient-to-r from-loam-teal to-loam-brown-500 relative overflow-hidden">
+            <div className="absolute -left-4 top-1 h-8 w-8 rotate-12 bg-loam-cream/30" />
+            <div className="absolute left-6 top-1 h-8 w-8 rotate-12 bg-loam-cream/20" />
+          </div>
+        </div>
+      )
+    }
+
+    if (heroVariant === 'homerunHappiness') {
+      return (
+        <div className="mb-4">
+          <div className="h-10 w-full rounded-lg bg-gradient-to-br from-loam-cream to-loam-brown-300 relative overflow-hidden">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-loam-cream/70" />
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    if (heroVariant === 'forTheRecord') {
+      return (
+        <div className="mb-4">
+          <div className="h-10 w-full rounded-lg bg-loam-white border border-loam-tan/40 flex flex-col justify-center px-3">
+            <div className="h-px bg-loam-tan/60 mb-1" />
+            <div className="h-px bg-loam-tan/50 mb-1" />
+            <div className="h-px bg-loam-tan/40" />
+          </div>
+        </div>
+      )
+    }
+
+    if (heroVariant === 'relationshipQuiz') {
+      return (
+        <div className="mb-4">
+          <div className="h-10 w-full rounded-lg bg-loam-cream relative overflow-hidden">
+            <div className="absolute left-3 top-1 w-7 h-6 rounded-lg bg-loam-teal/80" />
+            <div className="absolute left-7 top-3 w-7 h-6 rounded-lg bg-loam-sage/70" />
+          </div>
+        </div>
+      )
+    }
+
+    if (heroVariant === 'threeWordJournal') {
+      return (
+        <div className="mb-4">
+          <div className="h-10 w-full rounded-lg bg-loam-cream flex items-center justify-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-loam-teal" />
+            <span className="w-2 h-2 rounded-full bg-loam-brown-500" />
+            <span className="w-2 h-2 rounded-full bg-loam-sage" />
+          </div>
+        </div>
+      )
+    }
+
+    if (heroVariant === 'default') {
+      return (
+        <div className="mb-4">
+          <div className="h-10 w-full rounded-lg bg-loam-cream" />
+        </div>
+      )
+    }
+
+    return null
+  }
+
   const cardContent = (
     <div className={`bg-loam-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all border border-loam-tan/30 ${href ? 'cursor-pointer' : ''} ${className}`}>
       {label && (
@@ -31,6 +105,7 @@ export default function Card({
           </span>
         </div>
       )}
+      {renderHeroStrip()}
       {image && (
         <div className="mb-4 relative w-full h-64 rounded-lg overflow-hidden bg-loam-cream/30 flex items-center justify-center">
           <Image
@@ -40,13 +115,6 @@ export default function Card({
             className="object-contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-        </div>
-      )}
-      {icon && !image && (
-        <div className="mb-4">
-          <div className="w-10 h-10 rounded-lg bg-loam-teal flex items-center justify-center text-white text-lg">
-            {icon}
-          </div>
         </div>
       )}
       {title && (

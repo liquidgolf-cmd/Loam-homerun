@@ -386,31 +386,31 @@ export default function Home() {
             title="Finish Line Coach"
             description="A coaching app to help users set goals and actually cross the finish line."
             href="https://finishline-2og1.vercel.app/"
-            icon="🏁"
+            heroVariant="finishLine"
           />
           <Card
             title="Homerun to Happiness"
             description="AI-powered life coaching that uses the HomeRun Method to help you discover your deepest WHY and build a clear path to the life you want."
             href="https://homerun-happiness.vercel.app/"
-            icon="🏠"
+            heroVariant="homerunHappiness"
           />
           <Card
             title="For the Record"
             description="A simple reflection app to capture what really happened—in your own words—so you can notice patterns, process your experiences, and move forward with more clarity."
             href="https://fortherecord.loamstrategy.com/"
-            icon="📝"
+            heroVariant="forTheRecord"
           />
           <Card
             title="Relationship Quiz"
             description="An interactive app to help users understand and improve their relationships."
             href="https://relationship-flash-cards.vercel.app/"
-            icon="💬"
+            heroVariant="relationshipQuiz"
           />
           <Card
             title="3 Word Journal"
             description="A minimalist journaling app for daily reflection in just three words."
             href="https://3-word-journal-v1.vercel.app/"
-            icon="⋯"
+            heroVariant="threeWordJournal"
           />
         </div>
         <div className="text-center">
