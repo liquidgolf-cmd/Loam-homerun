@@ -53,10 +53,10 @@ export default function Card({
     if (heroVariant === 'forTheRecord') {
       return (
         <div className="mb-4">
-          <div className="h-10 w-full rounded-lg bg-loam-white border border-loam-tan/40 flex flex-col justify-center px-3">
-            <div className="h-px bg-loam-tan/60 mb-1" />
-            <div className="h-px bg-loam-tan/50 mb-1" />
-            <div className="h-px bg-loam-tan/40" />
+          <div className="h-10 w-full rounded-lg bg-loam-brown-300/60 border border-loam-brown-500/70 flex flex-col justify-center px-3">
+            <div className="h-px bg-loam-cream mb-1" />
+            <div className="h-px bg-loam-cream/80 mb-1" />
+            <div className="h-px bg-loam-cream/70" />
           </div>
         </div>
       )
