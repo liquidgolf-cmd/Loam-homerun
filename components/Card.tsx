@@ -54,9 +54,9 @@ export default function Card({
       return (
         <div className="mb-4">
           <div className="h-10 w-full rounded-lg bg-loam-brown-300/60 border border-loam-brown-500/70 flex flex-col justify-center px-3">
-            <div className="h-px bg-loam-cream mb-1" />
-            <div className="h-px bg-loam-cream/80 mb-1" />
-            <div className="h-px bg-loam-cream/70" />
+            <div className="h-px bg-loam-brown-700 mb-1" />
+            <div className="h-px bg-loam-brown-600 mb-1" />
+            <div className="h-px bg-loam-brown-500" />
           </div>
         </div>
       )
